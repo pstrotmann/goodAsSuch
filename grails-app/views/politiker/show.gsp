@@ -25,6 +25,15 @@
                     <g:if test="${flash.message}">
                     <div class="message" role="status">${flash.message}</div>
                     </g:if>
+                    <g:if test="${flash.regPgm0}">
+                        <div class="message" role="status">${flash.regPgm0}</div>
+                    </g:if>
+                    <g:if test="${flash.regPgm1}">
+                        <div class="message" role="status">${flash.regPgm1}</div>
+                    </g:if>
+                    <g:if test="${flash.regPgm2}">
+                        <div class="message" role="status">${flash.regPgm2}</div>
+                    </g:if>
                     <f:display bean="politiker" />
                     <g:form resource="${this.politiker}" method="DELETE">
                         <fieldset class="buttons">

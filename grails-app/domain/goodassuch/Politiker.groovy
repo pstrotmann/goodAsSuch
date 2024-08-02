@@ -8,35 +8,34 @@ class Politiker implements dieBarmherzigkeit, dieGerechtigkeit, dieWeisheit
     String ausbildung
     String herkunft
 
-    def regierungsprogramm() {
-        println("Mein Regierungsprogramm:")
-
+    def String [] regierungsprogramm() {
+        def regPgm = []
         if (geschlecht =="f"){
-            handleBarmherzig()
-            handleGerecht()
-            handleWeise()
+            regPgm << handleBarmherzig()
+            regPgm << handleGerecht()
+            regPgm << handleWeise()
         }
         else {
             if (herkunft == "Sklave")
-                handleBarmherzig()
+                regPgm << handleBarmherzig()
             if (herkunft == "Bürger")
-                handleGerecht()
+                regPgm << handleGerecht()
             if (herkunft == "Adel")
-                handleWeise()
+                regPgm << handleWeise()
             }
+        regPgm
     }
 
-    def handleBarmherzig() {
-        println("Ich baue einen Sozialstaat auf.")
+    def String handleBarmherzig() {
+        return "Ich baue einen Sozialstaat auf. "
     }
 
-    def handleGerecht() {
-        println("Ich erlasse gerechte Gesetze und sorge für Ihre Einhaltung.")
+    def String handleGerecht() {
+        return "Ich erlasse gerechte Gesetze und sorge für Ihre Einhaltung. "
     }
 
-    def handleWeise() {
-        println("Ich denke nach bevor ich handle und lasse mich beraten.")
-
+    def String handleWeise() {
+        return "Ich denke nach bevor ich handle und lasse mich beraten. "
     }
 
     static constraints = {
