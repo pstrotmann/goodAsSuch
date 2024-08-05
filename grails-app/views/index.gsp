@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Welcome to Plato</title>
 </head>
 <body>
+<%--
 <content tag="nav">
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
@@ -48,32 +49,24 @@
         <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
     </div>
 </div>
-
+--%>
 <div id="content" role="main">
     <div class="container">
         <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
+        <h1>Der Politiker verpflichtet der Idee des Guten</h1>
 
-            <p>
-                Congratulations, you have successfully started your first Grails application! At the moment
-                this is the default page, feel free to modify it to either redirect to a controller or display
-                whatever content you may choose. Below is a list of controllers that are currently deployed in
-                this application, click on each to execute its default action:
-            </p>
-
-            <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller">
-                            <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                        </li>
-                    </g:each>
-                </ul>
-            </div>
+        <p>
+            Glückwunsch, Sie haben erfolgreich die πολιτεια Anwendung aufgerufen. Starten Sie mit dem anlegen eines <g:link controller="Politiker">Politikers</g:link> und schauen Sie was passiert.
+        </p>
+        <p>
+            Zum technischen Background: Die Anwendung ist in Java, einer objektorientierten Programmiersprache, geschrieben. Diese erlaubt sowohl abstrakte Klasssen als auch instantiierbare
+            Klassen zu implementieren. Abstrakte Klassen werden dazu verwendet, allgemeine Konzepte zu modellieren: Freiheit, Gleichheit, Brüderlichkeit. In der vorliegenden Anwendung ist die abstrakte
+            Klasse <a href="https://github.com/pstrotmann/goodAsSuch/blob/master/src/main/groovy/goodassuch/dasGuteAnSich.groovy" target="_blank">dasGuteAnSich</a> implementiert. Diese erfüllt alles Gute, ausgedrückt durch die Java Klausel implements, siehe lat. impleo. Damit kann sie alle guten Eigenschaften vererben. Die instantiierbare Klasse Politiker erbt
+            diese Eigenschaften, z.B.: Gerechtigkeit, Barmherzigkeit, Weisheit. Instanzen von Politiker sind veränderlich, im Gegensatz zu im Programm ewigen unveränderlichen abstrakten Klassen. Für die Instanz eines Politikers
+            bedeutet veränderlich CRUD Funktionalität. Dabei steht das C für Create also das Entstehen, R für Retrieve, das Wahrnehmen, U für Update, die Veränderung und D für Delete, das Vergehen.
+        </p>
         </section>
     </div>
 </div>
-
 </body>
 </html>
