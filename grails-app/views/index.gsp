@@ -20,7 +20,7 @@
             Zum technischen Background: Die Anwendung ist in Groovy, einem Java Dialekt und als solchem in einer objektorientierten Programmiersprache, geschrieben.
             Diese erlaubt nicht nur <a href="https://groovy-lang.org/objectorientation.html#_normal_class" target="_blank">instantiierbare</a>
             sondern auch <a href="https://info.johpie.de/stufe_q1/ib_abstrakte_klassen_groovy.pdf" target="_blank">abstrakte Klasssen</a>
-            Klassen zu schreiben. Abstrakte Klassen modellieren allgemeine Konzepte: Freiheit, Gleichheit, Brüderlichkeit. In der vorliegenden Anwendung ist die abstrakte
+            zu schreiben. Abstrakte Klassen modellieren allgemeine Konzepte: Freiheit, Gleichheit, Brüderlichkeit. In der vorliegenden Anwendung ist die abstrakte
             Klasse <a href="https://github.com/pstrotmann/goodAsSuch/blob/master/src/main/groovy/goodassuch/dasGute.groovy" target="_blank">dasGute</a> die zentrale Klasse.
             Diese erfüllt alles Gute, ausgedrückt durch die Java Klausel "implements", siehe lat. impleo. Damit kann sie alle guten Eigenschaften vererben.
             Die instantiierbare Klasse <a href="https://github.com/pstrotmann/goodAsSuch/blob/master/grails-app/domain/goodassuch/Politiker.groovy" target="_blank">Politiker</a> erbt
