@@ -87,23 +87,6 @@ class PolitikerController {
         }
     }
 
-    def regPgm(Long id) {
-        Politiker politiker = Politiker.find("from Politiker where id = ${id}")
-        if (politiker.regierungsprogramm().size() == 1) {
-            flash.regPgm0 = politiker.regierungsprogramm()[0]
-        }
-        if (politiker.regierungsprogramm().size() == 2) {
-            flash.regPgm0 = politiker.regierungsprogramm()[0]
-            flash.regPgm1 = politiker.regierungsprogramm()[1]
-        }
-        if (politiker.regierungsprogramm().size() == 3) {
-            flash.regPgm0 = politiker.regierungsprogramm()[0]
-            flash.regPgm1 = politiker.regierungsprogramm()[1]
-            flash.regPgm2 = politiker.regierungsprogramm()[2]
-        }
-        redirect(uri: "/politiker/show/${id}")
-    }
-
     protected void notFound() {
         request.withFormat {
             form multipartForm {

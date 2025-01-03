@@ -1,6 +1,6 @@
 package goodassuch
 
-class Politiker implements dieBarmherzigkeit, dieGerechtigkeit, dieWeisheit
+class Politiker extends dasGute implements dieBarmherzigkeit, dieGerechtigkeit, dieWeisheit
 {
     String name
     String geburtsort
