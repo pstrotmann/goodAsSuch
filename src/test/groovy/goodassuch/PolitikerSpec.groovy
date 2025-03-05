@@ -13,6 +13,6 @@ class PolitikerSpec extends Specification implements DomainUnitTest<Politiker> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

@@ -41,7 +41,7 @@ class Politiker extends dasGute implements dieBarmherzigkeit, dieGerechtigkeit, 
     static constraints = {
         name size: 5..25, matches: "[a-zA-Z]+"
         geburtsort inList: ['Athen','Sparta','Delphi','Kreta']
-        geschlecht inList: ['m','f']
+        geschlecht inList: ['m','f','d']
         ausbildung inList: ['Philosoph']
         herkunft inList: ['Sklave','Bürger','Adel']
     }
